@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TourEase - Signup</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    /* Left Section */
+    .left {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      padding: 2rem;
+    }
+
+    .form-container {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .logo {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+
+    .logo span:first-child {
+      color: #4285f4; /* blue */
+    }
+    .logo span:last-child {
+      color: #34a853; /* green */
+    }
+
+    form input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+      margin: 10px 0;
+    }
+
+    .checkbox input {
+      margin-right: 8px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background: #3b5d1b;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .divider {
+      text-align: center;
+      margin: 20px 0;
+      position: relative;
+    }
+
+    .divider::before, .divider::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 40%;
+      height: 1px;
+      background: #ddd;
+    }
+
+    .divider::before { left: 0; }
+    .divider::after { right: 0; }
+
+    .social-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .social-buttons button {
+      flex: 1;
+      margin: 0 5px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #fff;
+      font-weight: 500;
+    }
+
+    .social-buttons img {
+      height: 18px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    .signin {
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .signin a {
+      color: #1a73e8;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Right Section */
+    .right {
+      width: 50%;
+      background: url('images/Untitled\ design.png') no-repeat center center/cover;
+      border-radius: 25px 0px 0px 25px;
+    }
+
+    @media (max-width: 900px) {
+      body {
+        flex-direction: column;
+      }
+      .left, .right {
+        width: 100%;
+        height: 50%;
+      }
+      .right {
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="left">
+    <div class="form-container">
+      <div class="logo"><span>Tour</span><span>Ease</span></div>
+
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email address" required>
+        <input type="password" placeholder="Password" required>
+
+        <div class="checkbox">
+          <input type="checkbox" required>
+          <label>I agree to the <a href="#">terms & policy</a></label>
+        </div>
+
+        <button type="submit" class="btn">Signup</button>
+      </form>
+
+      <div class="divider">or</div>
+
+      <div class="social-buttons">
+        <button><img src="https://www.svgrepo.com/show/355037/google.svg" alt="Google"> Sign in with Google</button>
+        <button><img src="https://www.svgrepo.com/show/303128/apple-black-logo.svg" alt="Apple"> Sign in with Apple</button>
+      </div>
+
+      <div class="signin">
+        Have an account? <a href="#">Sign In</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="right"></div>
+
+</body>
+</html>
